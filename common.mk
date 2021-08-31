@@ -217,11 +217,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo_msmnile
 
-# FM
-PRODUCT_PACKAGES += \
-    libqcomfm_jni \
-    qcom.fmradio
-
 # FOD
 EXTRA_FOD_ANIMATIONS := true
 
