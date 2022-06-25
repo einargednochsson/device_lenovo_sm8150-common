@@ -15,7 +15,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# HIDL 
+# HIDL
 $(call inherit-product, $(LOCAL_PATH)/common-hidl.mk)
 
 # Get non-open-source specific aspects
@@ -141,6 +141,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
+
+# Blur
+TARGET_ENABLE_BLUR := true
 
 # Camera
 PRODUCT_PACKAGES += \
