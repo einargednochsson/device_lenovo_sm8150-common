@@ -1,4 +1,4 @@
- <!--
+<!--
      Copyright (C) 2019 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,14 +22,4 @@
 
     <!-- Show the network traffic monitor on statusbar even if the device has a notch -->
     <bool name="config_forceShowNetworkTrafficOnStatusBar">true</bool>
-
-    <!-- The default tiles to display in QuickSettings -->
-    <string name="quick_settings_tiles_default" translatable="false">
-        wifi,cell,location,bt,airplane,sync,ambient_display,dnd,flashlight,alarm,rotation,cast,screenrecord,gamingmode,dark,custom(com.google.android.gms/.nearby.sharing.SharingTileService)
-    </string>
-
-    <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
-    <string name="quick_settings_tiles_stock" translatable="false">
-        internet,wifi,cell,location,bt,airplane,sync,ambient_display,dnd,flashlight,alarm,controls,wallet,rotation,battery,cast,screenrecord,mictoggle,cameratoggle,hotspot,gamingmode,inversion,saver,dark,work,night,reverse,reduce_brightness,aod,caffeine,heads_up,reading_mode,usb_tether,sound,onthego,cpuinfo,fpsinfo,compass,dataswitch,volume_panel,smartpixels,vpn
-    </string>
 </resources>
