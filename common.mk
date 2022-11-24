@@ -157,10 +157,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/GCamGo/system/etc/permissions/com.google.android.GCamGo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.GCamGo.xml \
     $(LOCAL_PATH)/GCamGo/system/etc/configs/hiddenapi-package-whitelist-GCamGo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-whitelist-GCamGo.xml
 
-# Component overrides
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-
 # Device init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
