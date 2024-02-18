@@ -26,11 +26,12 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
 
+PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CellBroadcastReceiverOverlay \
-    DialerOverlay \
     FrameworksResOverlay \
     LineageResOverlay \
     NotchBarKiller \
