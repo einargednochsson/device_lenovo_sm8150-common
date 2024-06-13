@@ -136,6 +136,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     libdng_sdk \
     libgui_vendor \
+    libutilscallstack.vendor:64 \
     libxml2
 
 PRODUCT_COPY_FILES += \
@@ -190,6 +191,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.msmnile \
     hwcomposer.msmnile \
+    libion.vendor \
     libsdmcore \
     libsdmutils \
     libtinyxml \
@@ -242,6 +244,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0.vendor \
+    libhidlmemory.vendor:64 \
     libhwbinder \
     libhwbinder.vendor
 
@@ -346,9 +349,11 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor:64 \
     libjson \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
+    libjsoncpp.vendor \
+    libqti_vndfwk_detect.vendor \
+    libsqlite.vendor:64 \
 
 # RenderScript
 PRODUCT_PACKAGES += \
@@ -363,9 +368,11 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor \
+    libnetutils.vendor \
     libril \
     librilutils \
     librmnetctl \
+    libsqlite.vendor \
     libxml2
 
 # Seccomp policy
@@ -377,7 +384,9 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
-    libsensorndkbridge
+    libdumpstateutil.vendor:64 \
+    libsensorndkbridge \
+    libpower.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -418,6 +427,8 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
+    libpng.vendor:32 \
+    libprocessgroup.vendor:32 \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
